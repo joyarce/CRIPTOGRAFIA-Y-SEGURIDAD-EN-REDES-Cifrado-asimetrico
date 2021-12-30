@@ -11,3 +11,5 @@ Luego, este listado de contraseñas en texto plano son hasheadas con un algoritm
 Desde el código Python con el que se ha realizado todo el proceso anteriormente señalado, se hace una solicitud a un segundo archivo python para este le envíe la llave pública mediante socket, debido a que generó tanto la llave pública como la privada. 
 
 Una vez recibida la llave pública, se encripta cada nuevo hash con un algoritmo de cifrado asimétrico, generando un archivo .txt que los contenga, el que será enviado mediante sockets hacia el anteriormente mencionado código Python que generó las llaves, el cual además descifrará los hash encriptados.
+
+Finalmente, se almacena cada hash en un archivo SQLite
